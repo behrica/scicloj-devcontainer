@@ -4,7 +4,10 @@ It sets up an dev container environment to have a graphical Emacs work with devc
 
 It installs:
 
-* Clojure
+* Python
+* R
+* Clojure (incl. clojisr and libpython-clj)
+* deps.edn with Clojure libraries for Data science from scicloj
 * noVNC incl port forwarding
 * Emacs
 * Calva
