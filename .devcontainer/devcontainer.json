@@ -21,9 +21,18 @@
   }, 
     "ghcr.io/wxw-matt/devcontainer-features/command_runner:latest": {
             "command1": "bash < <(curl -s https://raw.githubusercontent.com/clojure-lsp/clojure-lsp/master/install)",
-            "command2": "bash < <(curl -s ttps://raw.githubusercontent.com/babashka/babashka/master/install)"
+            "command2": "bash < <(curl -s ttps://raw.githubusercontent.com/babashka/babashka/master/install)",
+            "command3": "pip install pandas",
+            "command4": "clj -P"
         }
   },
+  "overrideFeatureInstallOrder": [
+    "ghcr.io/devcontainers/features/python",
+    "ghcr.io/devcontainers/features/java",
+    "ghcr.io/devcontainers-contrib/features/clojure-asdf",
+    "ghcr.io/wxw-matt/devcontainer-features/command_runner"
+  ],
+
   "forwardPorts": [6080],
   "portsAttributes": {
     "6080": {
