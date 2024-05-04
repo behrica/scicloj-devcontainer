@@ -22,8 +22,6 @@
     "ghcr.io/wxw-matt/devcontainer-features/command_runner:latest": {
             "command1": "bash < <(curl -s https://raw.githubusercontent.com/clojure-lsp/clojure-lsp/master/install)",
             "command2": "bash < <(curl -s ttps://raw.githubusercontent.com/babashka/babashka/master/install)"
-            //"command3": "Rscript -e 'install.packages(\"Rserve\",,\"http://rforge.net\")'"
-            
         }
   },
   "forwardPorts": [6080],
