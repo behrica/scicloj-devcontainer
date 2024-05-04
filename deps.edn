@@ -1,0 +1,27 @@
+{:paths ["src" "resources"]
+ :deps {org.clojure/clojure {:mvn/version "1.11.1"}
+        scicloj/tablecloth {:mvn/version "7.029.1"}
+        org.scicloj/kindly {:mvn/version "4-beta2"}
+        generateme/fastmath {:mvn/version "2.4.0"}
+        aerial.hanami/aerial.hanami {:mvn/version "0.20.0"}
+        cljplot/cljplot {:mvn/version "0.0.3"}
+        scicloj/metamorph.ml {:mvn/version "0.7.8"}
+        scicloj/scicloj.ml.smile {:mvn/version "7.2"}
+        scicloj/scicloj.ml.tribuo {:git/url "https://github.com/scicloj/scicloj.ml.tribuo"
+                                   :git/sha "1bde7c4"
+                                   :git/tag "v0.1.0"}
+        clj-python/libpython-clj {:mvn/version "2.025"}
+        scicloj/clojisr {:mvn/version "1.0.0-BETA22"}
+        org.scicloj/tempfiles {:mvn/version "1-alpha2"}
+        kixi/stats {:mvn/version "0.5.5"}}
+ :aliases
+ {:build {:deps {io.github.clojure/tools.build {:mvn/version "0.9.6"}
+                 slipset/deps-deploy {:mvn/version "0.2.1"}}
+          :ns-default build}
+  :test {:extra-paths ["test"]
+         :extra-deps {org.clojure/test.check {:mvn/version "1.1.1"}
+                      io.github.cognitect-labs/test-runner
+                      {:git/tag "v0.5.1" :git/sha "dfb30dd"}
+                      org.scicloj/clay {:mvn/version "2-beta7"}}}
+  :dev {:extra-paths ["notebooks"]
+        :extra-deps {org.scicloj/clay {:mvn/version "2-beta7"}}}}}
