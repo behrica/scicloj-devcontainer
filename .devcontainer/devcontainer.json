@@ -46,7 +46,7 @@
     }
   },
   // "postCreateCommand": "clj -P", // && pip install ....
-  "postAttachCommand": "/home/vscode/.setup-ide/setup-ide.sh"
+  "postAttachCommand": "test -f /home/vscode/.setup-ide/setup-ide.sh && /home/vscode/.setup-ide/setup-ide.sh"
   
   
 }
