@@ -1,4 +1,4 @@
-A devcontainer file for Cloure + Emacs development.
+A devcontainer file for Clojure development, support VSCode, Emacs and others
 
 It sets up an dev container environment to have a graphical Emacs work with devcontainer / codespaces / vscode
 
