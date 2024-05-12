@@ -23,4 +23,4 @@ jobs:
                            #cacheFrom: ghcr.io/example/example-devcontainer
 
                push: never
-               runCmd: clj -P
+               runCmd: which `clj`
