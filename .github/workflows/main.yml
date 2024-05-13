@@ -20,4 +20,4 @@ jobs:
                            #cacheFrom: ghcr.io/example/example-devcontainer
 
                push: never
-               runCmd: /home/vscode/.asdf/shims/clj -X:test
+               runCmd: /home/vscode/.asdf/shims/clj -M:test
