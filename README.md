@@ -2,7 +2,7 @@ A template project featuring a devcontainer setup for Datascience with Clojure u
 
 It sets up an dev container environment with several tool s and libaries for datascience in Clojure.
 
-It installs in te devcontainer:
+It installs in the devcontainer:
 
 ## installed inside devcontainer
 * Clojure (incl. clojisr and libpython-clj)
