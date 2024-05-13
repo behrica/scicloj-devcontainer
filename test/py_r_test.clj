@@ -1,12 +1,8 @@
 (ns py-r-test
   (:require  [clojure.test :as t]
-             [libpython-clj2.python :refer [py. py.. py.- py ] :as py]
+             ;;[libpython-clj2.python :refer [py. py.. py.- py ] :as py]
              [libpython-clj2.require :refer [require-python] ]
-
-             
-             
-             [clojisr.v1.r :refer [r require-r]]
-             ))
+             [clojisr.v1.r :refer [require-r]]))
 
 
 (py/initialize!)
@@ -22,9 +18,5 @@
            (r.base/getwd)))
 
 
-
-
-
-(r '(+ 1 2))
 
 
