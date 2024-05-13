@@ -2,11 +2,20 @@ A template project featuring a devcontainer setup for Datascience with Clojure u
 
 It sets up an dev container environment with several tool s and libaries for datascience in Clojure.
 
+# Quickstart
+1. Craete a new GitHub repository based on this template
+2. Clone and open rpository with VSCode / devpod / Codespaces
+3. "jack in" inside the devconatiner
+4. Enjoy Clojure and R  + python from Clojure  (using ClojisR + libpython-clj)
+5. Customize libraries
+    deps.edn: Clojure + Java
+    devcontainer.sjon: python libraies (via calls to pip in devcontainer.json)
+    devcontainer.json: R libraries (see [r-packages](ghcr.io/rocker-org/devcontainer-features/r-packages)
 It installs in the devcontainer:
 
 ## installed inside devcontainer
 * Clojure (incl. clojisr and libpython-clj)
-* Python (packages can be added in devcontainer.json)
+* Python (packages can be added vi calling "pip" in devcontainer.json)
 * R (packages can be added in devcontainer.json)
    * rstudio-server
 
