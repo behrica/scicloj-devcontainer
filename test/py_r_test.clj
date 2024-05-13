@@ -1,6 +1,6 @@
 (ns py-r-test
   (:require  [clojure.test :as t]
-             ;;[libpython-clj2.python :refer [py. py.. py.- py ] :as py]
+             [libpython-clj2.python  :as py]
              [libpython-clj2.require :refer [require-python] ]
              [clojisr.v1.r :refer [require-r]]))
 
