@@ -11,9 +11,14 @@ It sets up an dev container environment with several tool s and libaries for dat
     * deps.edn: Clojure + Java
     * devcontainer.json: python libraries (via calls to pip in devcontainer.json) (or add poetry feature)
     * devcontainer.json: R libraries (see [r-packages](ghcr.io/rocker-org/devcontainer-features/r-packages)
-It installs in the devcontainer:
+
+6. (install more features in devcontainer: https://containers.dev/features)
+   
+
 
 ## installed inside devcontainer
+The provided devcontainer.json installs in the devcontainer:
+
 * Clojure (incl. clojisr and libpython-clj)
 * Python (packages can be added vi calling "pip" in devcontainer.json)
 * R (packages can be added in devcontainer.json)
