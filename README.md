@@ -4,13 +4,19 @@ It sets up an dev container environment to have a graphical Emacs work with devc
 
 It installs:
 
-* Python
-* R
+* Python (packages can be added in devcontainer.json)
+* R (packages can be added in devcontainer.json)
+* rstudio-server
 * Clojure (incl. clojisr and libpython-clj)
 * deps.edn with Clojure libraries for Data science from scicloj
-* noVNC incl port forwarding
+* noVNC + desktop incl port forwarding
 * Emacs
 * Calva
+* quarto cli
+* docker-in-docker
+* leiningen
+* babashka
+* lsp
 
 In the default settings, we will get a vanilla Emacs running in noVNC.
 The Emacs setup can be configured via provding a specific script in a fixed location one the Codespace
