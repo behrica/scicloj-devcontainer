@@ -20,4 +20,7 @@ jobs:
                            #cacheFrom: ghcr.io/example/example-devcontainer
 
                push: never
-               runCmd: /home/vscode/.asdf/shims/clj -M:test
+               runCmd: | 
+                     echo `pwd`
+                     . runTests.sh
+                     /runTests.sh
