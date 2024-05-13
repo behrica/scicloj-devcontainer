@@ -1,23 +1,25 @@
-A devcontainer file for Clojure development, support VSCode, Emacs and others
+A devcontainer file for Clojure development using several libraries from [scicloj](https://scicloj.github.io/)
 
-It sets up an dev container environment to have a graphical Emacs work with devcontainer / codespaces / vscode
+It sets up an dev container environment with several tool s and libaries for datascience in Clojure.
 
-It installs:
+It installs in te devcontainer:
 
+## installed inside devcontainer
+* Clojure (incl. clojisr and libpython-clj)
 * Python (packages can be added in devcontainer.json)
 * R (packages can be added in devcontainer.json)
-* rstudio-server
-* Clojure (incl. clojisr and libpython-clj)
+   * rstudio-server
+
 * deps.edn with Clojure libraries for Data science from scicloj
-* noVNC + desktop incl port forwarding
+* noVNC + lite desktop incl port forwarding
 * Emacs
-* Calva
 * quarto cli
 * docker-in-docker
 * leiningen
 * babashka
 * lsp
 
+### Graphical Emacs in web-noVNC
 In the default settings, we will get a vanilla Emacs running in noVNC.
 The Emacs setup can be configured via provding a specific script in a fixed location one the Codespace
 instance, which can be done using the dotfile support of devctonater / Codespaces / VSCode
