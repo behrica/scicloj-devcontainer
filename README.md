@@ -9,7 +9,7 @@ It sets up an dev container environment with several tool s and libaries for dat
 4. Enjoy Clojure and R  + python from Clojure  (using ClojisR + libpython-clj)
 5. Customize libraries
     * deps.edn: Clojure + Java
-    * devcontainer.json: python libraies (via calls to pip in devcontainer.json) (or add poetry feature)
+    * devcontainer.json: python libraries (via calls to pip in devcontainer.json) (or add poetry feature)
     * devcontainer.json: R libraries (see [r-packages](ghcr.io/rocker-org/devcontainer-features/r-packages)
 It installs in the devcontainer:
 
