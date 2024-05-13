@@ -4,7 +4,7 @@
              [libpython-clj2.require :refer [require-python] ]
              [clojisr.v1.r :refer [require-r]]))
 
-
+;; check if R and python bindings work
 (py/initialize!)
 (require-python '[os :as py-os])
 (require-r '[base])
