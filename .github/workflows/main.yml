@@ -22,5 +22,5 @@ jobs:
                push: never
                runCmd: | 
                      echo `pwd`
-                     . runTests.sh
-                     ./runTests.sh
+                     bash -i -c clj -X:test
+                     
