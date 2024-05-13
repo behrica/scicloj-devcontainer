@@ -20,7 +20,5 @@ jobs:
                            #cacheFrom: ghcr.io/example/example-devcontainer
 
                push: never
-               runCmd: | 
-                     echo `pwd`
-                     bash -i -c clj -X:test
+               runCmd: bash -i -c 'clj -X:test'
                      
