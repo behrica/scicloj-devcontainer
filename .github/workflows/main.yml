@@ -1,10 +1,7 @@
 name: Clojure CI
 
-on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+on: push
+    
 
 jobs:
 
@@ -23,4 +20,5 @@ jobs:
                            #cacheFrom: ghcr.io/example/example-devcontainer
 
                push: never
-               #runCmd: which clj
+               runCmd: bash -i -c 'clj -X:test'
+                     
