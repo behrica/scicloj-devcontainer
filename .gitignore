@@ -2,4 +2,5 @@
 .cpcache/
 classes/
 .lsp/
-
+.calva
+.nrepl-port
