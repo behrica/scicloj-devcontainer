@@ -20,4 +20,4 @@ jobs:
                            #cacheFrom: ghcr.io/example/example-devcontainer
 
                push: never
-               runCmd: java -version
+               runCmd: bash -i -c clj -X:test
