@@ -16,6 +16,7 @@
     "ghcr.io/rocker-org/devcontainer-features/rstudio-server": {},
     "ghcr.io/devcontainers/features/docker-in-docker:2": {},
     "ghcr.io/devcontainers-contrib/features/leiningen-sdkman:2": {},
+    "ghcr.io/devcontainers-contrib/features/poetry:2": {},
     "ghcr.io/rocker-org/devcontainer-features/r-packages:1": {
       "packages": "Rserve",
       "additionalRepositories": "rforge= 'https://rforge.net'"

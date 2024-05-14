@@ -1,26 +1,54 @@
-A devcontainer file for Clojure development, support VSCode, Emacs and others
+A template project featuring a devcontainer setup for Datascience with Clojure using several libraries from [scicloj](https://scicloj.github.io/)
 
-It sets up an dev container environment to have a graphical Emacs work with devcontainer / codespaces / vscode
+It sets up an dev container environment with several tool s and libaries for datascience in Clojure.
 
-It installs:
+# Quickstart
+1. Create a new GitHub repository based on this template
+2. Clone and open repository with VSCode / devpod / Codespaces and trigger/wait for container build
+3. "jack in" inside the devconatiner
+4. Enjoy Clojure and R  + python from Clojure  (using ClojisR + libpython-clj)
 
-* Python
-* R
+## Customization
+
+5. Customize libraries
+    * deps.edn: add Clojure + Java libraries
+    * devcontainer.json: add python libraries globally via calls to `pip` in devcontainer.json (or add poetry feature incl poetry.toml)
+    * devcontainer.json: add R libraries (see [r-packages](ghcr.io/rocker-org/devcontainer-features/r-packages)
+
+
+6. (Install more features in devcontainer: https://containers.dev/features)
+7. (Remove things you don't need)
+   
+
+
+## Installed inside devcontainer
+The provided devcontainer.json installs in the devcontainer:
+
 * Clojure (incl. clojisr and libpython-clj)
-* deps.edn with Clojure libraries for Data science from scicloj
-* noVNC incl port forwarding
-* Emacs
-* Calva
+* Python (packages can be added vi calling "pip" in devcontainer.json)
+* R (packages can be added in devcontainer.json)
+   * rstudio-server
 
+* deps.edn with Clojure libraries for Data science from scicloj
+* noVNC + lite desktop incl port forwarding
+* Emacs
+* quarto cli
+* docker-in-docker
+* leiningen
+* babashka
+* lsp
+
+### Graphical Emacs in web-noVNC
 In the default settings, we will get a vanilla Emacs running in noVNC.
-The Emacs setup can be configured via provding a specific script in a fixed location one the Codespace
-instance, which can be done using the dotfile support of devctonater / Codespaces / VSCode
+The Emacs setup can be configured via providing a specific script in a fixed location 
+, which can be most easly done using the dotfile support of devcontainer.
 
 See here: [dotfiles](https://code.visualstudio.com/docs/devcontainers/containers#_personalizing-with-dotfile-repositories)
 
 If there is a file in `/home/vscode/.setup-ide/setup-ide.sh` it will be executed after container creation.
 This can do "whatever" to configure Emacs from your own configuration.
-(Baically the script can do everything)
+(Baically the script can do everything on the build container.)
+
 My `setup-ide.sh` configures Doom Emacs with my personal configuration.
 
 
