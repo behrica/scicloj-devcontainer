@@ -45,8 +45,11 @@
       ]
     }
   },
-  "postCreateCommand": ["/bin/bash", "-i", "-c",  "clj -Sthreads 1 -P"],
-  "postAttachCommand": "bash -c 'if [ -f \"/home/vscode/.setup-ide/setup-ide.sh\" ]; then /home/vscode/.setup-ide/setup-ide.sh; fi'"
- 
+  
+  "postStartCommand":  
+  { "ide-setup": "bash -c 'if [ -f \"/home/vscode/.setup-ide/setup-ide.sh\" ]; then /home/vscode/.setup-ide/setup-ide.sh; fi'",
+    "clojure prepare": ["/bin/bash", "-i", "-c",  "clj -Sthreads 1 -P"],
+    "poetry setup": "python3 -m venv $HOME/.local && source $HOME/.local/bin/activate && poetry install"
+  }
 }
  
