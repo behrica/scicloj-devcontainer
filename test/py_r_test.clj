@@ -7,6 +7,7 @@
 ;; check if R and python bindings work
 (py/initialize!)
 (require-python '[os :as py-os])
+(require-python '[pandas])
 (require-r '[base])
 
 (t/deftest test-python []
