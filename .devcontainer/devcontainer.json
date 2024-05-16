@@ -22,8 +22,8 @@
       "additionalRepositories": "rforge= 'https://rforge.net'"
   }, 
     "ghcr.io/wxw-matt/devcontainer-features/command_runner:latest": {
-            "command1": "bash < <(curl -s https://raw.githubusercontent.com/clojure-lsp/clojure-lsp/master/install)",
-            "command2": "bash < <(curl -s ttps://raw.githubusercontent.com/babashka/babashka/master/install)"
+            "command1": "sudo bash < <(curl -s https://raw.githubusercontent.com/clojure-lsp/clojure-lsp/master/install)",
+            "command2": "sudo bash < <(curl -s https://raw.githubusercontent.com/babashka/babashka/master/install)"
         }
   },
   "overrideFeatureInstallOrder": [
@@ -33,10 +33,13 @@
     "ghcr.io/wxw-matt/devcontainer-features/command_runner"
   ],
 
-  "forwardPorts": [6080],
+  "forwardPorts": [6080,12345],
   "portsAttributes": {
     "6080": {
       "label": "desktop"
+    },
+    "12345": {
+      "label": "nrepl"
     }
   },
   "customizations": {
@@ -49,8 +52,8 @@
   
   "postStartCommand":  
   { "ide-setup": "bash -c 'if [ -f \"/home/vscode/.setup-ide/setup-ide.sh\" ]; then /home/vscode/.setup-ide/setup-ide.sh; fi'",
-    "clojure prepare": ["/bin/bash", "-i", "-c",  "clj -Sthreads 1 -P"],
-    "poetry setup":  ["bash", "-i", "-c",  "mkdir .venv && poetry install" ]
+    "clojure prepare": "bash -i -c 'clj -Sthreads 1 -P'",
+    "poetry setup":  "bash -i -c 'mkdir -p .venv && poetry install'"
 
   }
 }
