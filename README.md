@@ -5,14 +5,14 @@ It sets up an dev container environment with several tool s and libaries for dat
 # Quickstart
 1. Create a new GitHub repository based on this template
 2. Clone and open repository with VSCode / devpod / Codespaces and trigger/wait for container build
-3. "jack in" inside the devconatiner
+3. "jack in" inside the devcontainer
 4. Enjoy Clojure and R  + python from Clojure  (using ClojisR + libpython-clj)
 
 ## Customization
 
 5. Customize libraries
     * deps.edn: add Clojure + Java libraries
-    * devcontainer.json: add python libraries globally via calls to `pip` in devcontainer.json (or add poetry feature incl poetry.toml)
+    * pyproject.toml: add python libraries into poetry config file
     * devcontainer.json: add R libraries (see [r-packages](ghcr.io/rocker-org/devcontainer-features/r-packages)
 
 
