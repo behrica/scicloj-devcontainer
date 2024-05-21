@@ -1,3 +1,8 @@
+> [!NOTE]
+> Further development of this template is done here: https://github.com/behrica/devcontainer-templates
+
+
+
 A template project featuring a devcontainer setup for Datascience with Clojure using several libraries from [scicloj](https://scicloj.github.io/)
 
 It sets up an dev container environment with several tool s and libaries for datascience in Clojure.
